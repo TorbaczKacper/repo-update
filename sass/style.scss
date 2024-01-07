@@ -6,8 +6,50 @@
 
 body{
     height: 100vh;
-    background-color: royalblue;
+    background-color: #333;
     overflow: hidden;
     color: #fff;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card{
+    position: relative;
+    width: 400px;
+    background-color: #ddd;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__img{
+        width: 100%;
+    }
+
+    &__body{
+        padding: 10px 20px;
+    }
+
+    &__text{
+        margin: 20px 0;
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    &__btn{
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &--highlight{
+            background-color: seagreen;
+        }
+    }
+}
+
